@@ -1,0 +1,48 @@
+:root {
+  /* Primary */
+
+  --Green-500: hsl(158, 36%, 37%);
+  --Green-700: hsl(158, 42%, 18%);
+
+  /* Neutral */
+
+  --Black: hsl(212, 21%, 14%);
+  --Grey: hsl(228, 12%, 48%);
+  --Cream: hsl(30, 38%, 92%);
+  --White: hsl(0, 0%, 100%);
+
+  /* ## Typography */
+
+  /* ### Body Copy */
+
+  --font-size/*(paragraph)*/: 14px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: var(--font-size);
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    background-color: var(--Black);
+}
+
+.main-container {
+    width: 375px;
+    background-color: var(--Cream);
+    margin: 50px auto;
+    padding: 20px;
+}
+
+& .image-container {
+   
+    & .image {
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+
+    }
+}
