@@ -88,15 +88,15 @@ body {
     align-items: center;
 
     & .main {
-        font-size: 32px;
-        color: var(--Green-500);
-        font-family: Fraunces;
+      font-size: 32px;
+      color: var(--Green-500);
+      font-family: Fraunces;
     }
 
     & .previous {
-        color: var(--Grey);
-        font-size: 13px;
-        margin-left:20px;
+      color: var(--Grey);
+      font-size: 13px;
+      margin-left: 20px;
     }
   }
 
@@ -104,15 +104,110 @@ body {
     height: 45px;
     border-radius: 7px;
     background-color: var(--Green-500);
-    border:1px solid var(--Green-500);
+    border: 1px solid var(--Green-500);
     color: var(--White);
     display: flex;
     justify-content: center;
     align-items: center;
 
+    
     & .btn-icon {
-        height:16px;
+      height: 16px;
+      margin-right: 10px;
+    }
+  }
+
+  & .btn:hover, .btn:focus {
+    background-color: var(--Green-700);
+    cursor: pointer;
+  }
+
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    display: flex;
+    background-color: var(--Cream);
+  }
+
+  .main-container {
+    width: 620px;
+    display: flex;
+    height: 480px;
+    margin: auto;
+    padding: 0px;
+    border-radius: 10px;
+
+    & .image-container {
+      background-image: url("./images/image-product-desktop.jpg");
+      background-size: cover;
+      height: 100%;
+      width: 50%;
+      border-radius: 10px 0px 0px 10px;
+    }
+
+    & .content-container {
+      width: 50%;
+      background-color: var(--White);
+      border-radius: 0px 10px 10px 0px;
+    }
+  }
+
+  .title-information-container {
+    padding: 30px 30px 0px 30px;
+    border-top-right-radius: 10px;
+
+    & .minor-title,
+    .info {
+      font-size: 15px;
+      margin-bottom: 22px;
+    }
+
+    & .major-title {
+      font-size: 36px;
+      margin-bottom: 22px;
+      padding-right: 10px;
+    }
+
+    & .info {
+      margin-bottom: 22px;
+    }
+  }
+
+  & .price-add-container {
+    padding: 0px 30px 30px 30px;
+    border-radius: 0 0 10px 10px;
+
+    & .price-container {
+      display: flex;
+      margin-bottom: 30px;
+      align-items: center;
+
+      & .main {
+        font-size: 36px;
+        color: var(--Green-500);
+        font-family: Fraunces;
+      }
+
+      & .previous {
+        color: var(--Grey);
+        font-size: 14px;
+        margin-left: 20px;
+      }
+    }
+
+    & .btn {
+      height: 50px;
+
+      & .btn-icon {
+        height: 18px;
+        width: 18px;
         margin-right: 10px;
+      }
+
+      & .btn-text {
+        font-size: 15px;
+      }
     }
   }
 }
