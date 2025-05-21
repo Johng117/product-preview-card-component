@@ -177,7 +177,6 @@ body {
     & .image-container {
       height: 100%;
       width: 50%;
-      /* border-radius: 10px 0px 0px 10px; */
 
       & .small-image {
         display: none;
